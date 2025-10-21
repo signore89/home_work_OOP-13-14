@@ -13,6 +13,6 @@ class Magazine extends Material{
 
     public function getInfo()
     {
-        return "Название: {$this->title}\nАвтор: {$this->author}\nГод: {$this->publicationYear}\nНомер выпуска: {$this->issueNumber}";
+        return "Название: {$this->title} Автор: {$this->author} Год: {$this->publicationYear} Номер выпуска: {$this->issueNumber}";
     }
 }

@@ -13,6 +13,6 @@ class Book extends Material{
 
     public function getInfo()
     {
-        return "Название: {$this->title}\nАвтор: {$this->author}\nГод: {$this->publicationYear}\nЖанр: {$this->genre}";
+        return "Название: {$this->title} Автор: {$this->author} Год: {$this->publicationYear} Жанр: {$this->genre}";
     }
 }

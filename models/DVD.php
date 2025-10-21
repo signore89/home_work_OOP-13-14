@@ -13,6 +13,6 @@ class DVD extends Material{
 
     public function getInfo()
     {
-        return "Название: {$this->title}\nАвтор: {$this->author}\nГод: {$this->publicationYear}\nПродолжительность: {$this->duration}";
+        return "Название: {$this->title} Автор: {$this->author} Год: {$this->publicationYear} Продолжительность: {$this->duration}";
     }
 }

@@ -1,8 +1,5 @@
 <?
 require_once "Material.php";
-require_once "DVD.php";
-require_once "Magazine.php";
-require_once "Book.php";
 
 class Library {
     public $materials = [];

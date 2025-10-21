@@ -5,8 +5,13 @@ require_once "models/DVD.php";
 require_once "models/Magazine.php";
 require_once "models/Book.php";
 require_once "models/Material.php";
+require_once "models2/Order.php";
+require_once "models2/Product.php";
+require_once "models2/PhysicalProduct.php";
+require_once "models2/DigitalProduct.php";
 
 $liba = new Library();
+$order = new Order();
 
 $book1 = new Book("Тихий Дон","Михаил Шолохов","литература 20 века", "Исторические романы");
 $book2 = new Book("Мастер и Маргарита","Михаил Булгаков","1940", "Советская классика");
@@ -31,3 +36,16 @@ $liba->addMaterial($dvd2);
 $liba->addMaterial($dvd3);
 
 $liba->listMaterials();
+
+//задание 2
+
+$book1 = new DigitalProduct("PHP для начинающих", 1500,8);
+$book2 = new DigitalProduct("JavaScript продвинутый", 2200,12);
+
+$vegetables1 = new PhysicalProduct("картоха", 150,8);
+$vegetables2 = new PhysicalProduct("лук", 50,12);
+$order->addProduct($book1);
+$order->addProduct($book2);
+$order->addProduct($vegetables1);
+$order->addProduct($vegetables2);
+$order->listProducts();
